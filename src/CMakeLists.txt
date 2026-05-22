@@ -80,13 +80,13 @@ target_compile_options(project_strict_warnings INTERFACE
 )
 
 # === Main App ===
-add_executable(example.tsk
-example.m.cpp
+add_executable(available.tsk
+available.m.cpp
 )
-target_link_libraries(example.tsk PRIVATE exlib project_strict_warnings)
+target_link_libraries(available.tsk PRIVATE availableserverlib project_strict_warnings)
 
 # ===  Apply knobs in one place
-apply_sanitizers(exlib)
-apply_sanitizers(example.tsk)
-apply_profiler(example.tsk)
+apply_sanitizers(availableserverlib)
+apply_sanitizers(available.tsk)
+apply_profiler(available.tsk)
 
