@@ -51,8 +51,6 @@ auto Client::_setup(const std::string &hostname, const std::string &message) -> 
         return CLIENT_ERROR_CODES::FAILURE;
     }
 
-    ac::printaddrinfo(d_connectedinfo);
-
     return CLIENT_ERROR_CODES::SUCCESS;
 }
 
