@@ -83,7 +83,7 @@ target_compile_options(project_strict_warnings INTERFACE
 add_executable(available.tsk
 available.m.cpp
 )
-target_link_libraries(available.tsk PRIVATE availableserverlib project_strict_warnings)
+target_link_libraries(available.tsk PRIVATE availableserverlib availableclientlib availablecommonlib project_strict_warnings)
 
 # ===  Apply knobs in one place
 apply_sanitizers(availableserverlib)
