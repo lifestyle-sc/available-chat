@@ -8,7 +8,9 @@ set(CMAKE_CXX_EXTENSIONS OFF) # Disables compiler-specific "shortcuts"
 enable_testing()
 
 add_subdirectory(src)
+add_subdirectory(groups/availablecommon)
 add_subdirectory(groups/availableserver)
+add_subdirectory(groups/availableclient)
 
 add_custom_target(
     check-format ALL
